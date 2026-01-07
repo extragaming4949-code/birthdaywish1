@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday IBTISAM! 🎂</title>
+    <meta name="description" content="A special birthday wish for IBTISAM - Made with love">
+    <meta property="og:title" content="Happy Birthday IBTISAM!">
+    <meta property="og:description" content="A special birthday celebration">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal-styles.css">
+    <link rel="stylesheet" href="flip-cards.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Premium Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <div class="loader-logo">🎂</div>
+            <div class="loader-text">Preparing something special...</div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="happyBirthdayMusic">
+        <source src="HAPPY BIRTHDAYSOUND.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="bgMusic" loop>
+        <source src="Khair Mangda  Sachin-Jigar  Specials By Zee Music Co. - Zee Music Company.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="hearts"></div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Intro Screen -->
+    <div class="intro-screen" id="intro">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+                <div class="letter">
+                    <span class="click-text">Click to open your surprise! 💝</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Birthday Content -->
+    <div class="birthday-container" id="birthdayContent">
+        <!-- Sparkles -->
+        <div class="sparkles" id="sparkles"></div>
+
+        <!-- Header Section -->
+        <header class="hero-section">
+            <div class="cake-animation">
+                <div class="cake">
+                    <div class="candle-container">
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                    <div class="cake-layer layer1"></div>
+                    <div class="cake-layer layer2"></div>
+                    <div class="cake-layer layer3"></div>
+                </div>
+            </div>
+            <h1 class="birthday-title">
+                <span class="happy">Happy</span>
+                <span class="birthday">Birthday</span>
+            </h1>
+            <h2 class="name-title">IBTISAM</h2>
+            <div class="decorative-line">
+                <span class="star">✨</span>
+                <span class="line"></span>
+                <span class="heart">💖</span>
+                <span class="line"></span>
+                <span class="star">✨</span>
+            </div>
+        </header>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="message-card">
+                <div class="card-decoration top-left"></div>
+                <div class="card-decoration top-right"></div>
+                <div class="card-decoration bottom-left"></div>
+                <div class="card-decoration bottom-right"></div>
+
+                <div class="message-content">
+                    <p class="greeting">Dear SHONA BABY,</p>
+                    <p class="message-text">
+                        Today is your special day, and I couldn't let it pass without celebrating the amazing person you
+                        are! 🌟
+                    </p>
+                    <p class="message-text">
+                        It's been almost a year since our friendship began, and what an incredible journey it has been!
+                        Through every moment, every laugh, and every memory we've shared, you've become someone truly
+                        special to me.
+                        You're still here with me, and that means everything. 💫
+                    </p>
+                    <p class="message-text">
+                        Your friendship is like a beautiful story — one that gets better with every chapter,
+                        just like the novels you love to read. 📚 You bring warmth, joy, and so much light into my life,
+                        and I'm grateful for every single day we've spent together.
+                    </p>
+                    <p class="message-text">
+                        May this year bring you endless happiness, adventures that feel like
+                        your favorite Netflix series (binge-worthy and unforgettable! 🎬), and dreams that
+                        come true one by one. You deserve all the love, laughter, and magic this world has to offer! 💝
+                    </p>
+                    <p class="message-text">
+                        Here's to the year we've had together, and to many more years of friendship ahead!
+                        Thank you for being you, and for staying by my side. ✨
+                    </p>
+                    <p class="signature">
+                        With all my love and best wishes,<br>
+                        <span class="signature-name">Your Best Friend Forever 💫</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <h3 class="section-title">✨ Things That Make You Special ✨</h3>
+            <p class="section-subtitle">Click each card to reveal your special gift! 🎁</p>
+            <div class="interests-grid">
+                <div class="flip-card" data-card="books">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="interest-icon">📚</div>
+                            <h4>Bookworm</h4>
+                            <p>May every novel transport you to magical worlds and adventures!</p>
+                            <span class="flip-hint">👆 Click to reveal gift!</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>🎁 A Gift From The Heart</h4>
+                            <p>Tell me the novel name, and I will gift it to you! 💝 Any book you want, any story you
+                                wish to read, just name it and it's yours! Because seeing you happy with your favorite
+                                books brings me so much joy! 📖✨</p>
+                            <span class="flip-back-hint">👆 Click to flip back</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-card="netflix">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="interest-icon">🎬</div>
+                            <h4>Netflix Lover</h4>
+                            <p>May your watchlist always be full of amazing shows and movies!</p>
+                            <span class="flip-hint">👆 Click to reveal gift!</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>🎁 My Special Promise</h4>
+                            <p>For one whole month, I will never tell you to not see Netflix and do conversation with
+                                me! 😊 Watch as much as you want, Shona Baby - your happiness matters more! I promise to
+                                never complain. Enjoy every show, every movie, guilt-free! 🎁✨</p>
+                            <span class="flip-back-hint">👆 Click to flip back</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-card="friendship">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="interest-icon">💝</div>
+                            <h4>Amazing Friend</h4>
+                            <p>You make friendship feel like the best story ever written!</p>
+                            <span class="flip-hint">👆 Click to reveal gift!</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>🎁 Together Forever</h4>
+                            <p>Baki ab ham mil ni sakty so jab next month mily ge to tab tak me gift be soch lu ga ni to
+                                andaza laga lu ga achy se and enjoy your day ALLAH apko
+                                hamesha khush rakhe AMEEN SUMAMEEN✨🤗</p>
+                            <span class="flip-back-hint">👆 Click to flip back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishes Section -->
+        <section class="wishes-section">
+            <div class="wishes-container">
+                <h3 class="wishes-title">🎁 Birthday Wishes For You 🎁</h3>
+                <div class="wishes-list">
+                    <div class="wish-item" style="--delay: 0.1s">
+                        <span class="wish-emoji">🌟</span>
+                        <span>May our friendship continue to shine bright</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.2s">
+                        <span class="wish-emoji">💖</span>
+                        <span>May love and happiness surround you always</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.3s">
+                        <span class="wish-emoji">📖</span>
+                        <span>May every chapter of your life be beautiful</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.4s">
+                        <span class="wish-emoji">✨</span>
+                        <span>May all your dreams take flight</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.5s">
+                        <span class="wish-emoji">🎬</span>
+                        <span>May this year be your best one yet</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.6s">
+                        <span class="wish-emoji">🌹</span>
+                        <span>May we create many more memories together</span>
+                    </div>
+                    <div class="wish-item" style="--delay: 0.7s">
+                        <span class="wish-emoji">🎂</span>
+                        <span>May you always know how special you are to me</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Blow the Candles Game -->
+        <section class="candle-game-section" id="candleGame">
+            <h3 class="section-title">🎂 Make a Wish & Blow the Candles! 🎂</h3>
+            <div class="candle-game-container">
+                <p class="game-instruction">Click on the candles to blow them out, or tap "Blow All" to make your wish!
+                </p>
+                <div class="game-candles">
+                    <div class="game-candle active" data-candle="1">
+                        <div class="game-flame"></div>
+                        <div class="game-candle-stick"></div>
+                    </div>
+                    <div class="game-candle active" data-candle="2">
+                        <div class="game-flame"></div>
+                        <div class="game-candle-stick"></div>
+                    </div>
+                    <div class="game-candle active" data-candle="3">
+                        <div class="game-flame"></div>
+                        <div class="game-candle-stick"></div>
+                    </div>
+                    <div class="game-candle active" data-candle="4">
+                        <div class="game-flame"></div>
+                        <div class="game-candle-stick"></div>
+                    </div>
+                    <div class="game-candle active" data-candle="5">
+                        <div class="game-flame"></div>
+                        <div class="game-candle-stick"></div>
+                    </div>
+                </div>
+                <button class="blow-btn" id="blowBtn">💨 Blow All Candles</button>
+                <div class="game-message" id="gameMessage"></div>
+            </div>
+        </section>
+
+        <!-- Floating Balloons Game -->
+        <section class="balloon-section" id="balloonGame">
+            <h3 class="section-title">🎈 Pop the Balloons! 🎈</h3>
+            <div class="balloon-container" id="balloonContainer">
+                <p class="game-instruction">Click on the balloons to pop them and reveal surprises!</p>
+                <div class="balloon-score">Score: <span id="balloonScore">0</span></div>
+            </div>
+        </section>
+
+        <!-- Virtual Wish Box -->
+        <section class="wish-box-section" id="wishBoxSection">
+            <h3 class="section-title">💝 A Special Wish For You! 💝</h3>
+            <div class="wish-box-container">
+                <div class="wish-box" id="wishBox">
+                    <div class="wish-lid">
+                        <div class="wish-bow"></div>
+                    </div>
+                    <div class="wish-body"></div>
+                    <p class="wish-hint">Click to open your surprise!</p>
+                </div>
+                <div class="wish-surprises" id="wishSurprises">
+                    <div class="surprise-card">
+                        <h4>💫 One Year, Countless Memories</h4>
+                        <p>From strangers to best friends in almost a year - what an incredible journey! Here's to the
+                            laughs, the deep conversations, and all the moments that brought us closer. 🌟</p>
+                    </div>
+                    <div class="surprise-card">
+                        <h4>🌸 You're Irreplaceable</h4>
+                        <p>In this whole wide world, there's no one quite like you. Your kindness, your spirit, your
+                            unique way of seeing life - that's what makes you extraordinary! Never change. 💖</p>
+                    </div>
+                    <div class="surprise-card">
+                        <h4>🎭 Through Every Season</h4>
+                        <p>We've been through ups and downs, but our friendship has only grown stronger. Thank you for
+                            being my constant, my confidant, and my chosen family. 🤗</p>
+                    </div>
+                    <div class="surprise-card">
+                        <h4>📖 Every Chapter with You</h4>
+                        <p>Just like the novels you adore, our friendship is a beautiful story - full of plot twists,
+                            heartwarming moments, and characters (us!) that keep getting better! ✨</p>
+                    </div>
+                    <div class="surprise-card">
+                        <h4>🌈 The Best is Yet to Come</h4>
+                        <p>This past year was just the beginning! I can't wait for all the adventures, memories, deep
+                            conversations, and beautiful moments that await us. Forever grateful you're in my life! 💕✨
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Memory Timeline -->
+        <section class="timeline-section" id="timelineSection">
+            <h3 class="section-title">📅 Our Friendship Journey 📅</h3>
+            <div class="timeline-container">
+                <div class="timeline-item" data-year="Start">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>The Beginning 23 DECEMBER 2024</h4>
+                        <p>Almost a year ago, when our amazing friendship started 💫</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="Growth">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Growing Together 23 DECEMBER 2024 - Today </h4>
+                        <p>One year of shared laughs, stories, and unforgettable memories 📚</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="Now">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Today - One Year Strong!</h4>
+                        <p>Still together, celebrating your Birthday and our beautiful bond! 🎉</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="Future">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>The Future INSHALLAH TILL YOUR NIKKAH</h4>
+                        <p>Forever friends - many more years and adventures ahead! ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="birthday-footer">
+            <div class="footer-content">
+                <div class="final-wish">
+                    <p class="footer-text">🎂 Wishing you the happiest birthday ever SHAHZADI 🎂</p>
+                    <div class="hearts-animation">
+                        <span>💖</span>
+                        <span>💝</span>
+                        <span>💗</span>
+                        <span>💖</span>
+                        <span>💝</span>
+                    </div>
+                </div>
+                <p class="made-with-love">Made with 💕 for someone truly special</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Advanced Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-player-toggle" id="musicToggle">
+            <span class="music-icon">🎵</span>
+        </div>
+        <div class="music-player-panel" id="musicPanel">
+            <div class="music-info">
+                <div class="music-title">Khair Mangda</div>
+                <div class="music-artist">Atif Aslam</div>
+            </div>
+            <div class="music-progress-container">
+                <span class="music-time" id="currentTime">0:00</span>
+                <div class="music-progress-bar" id="progressBar">
+                    <div class="music-progress-fill" id="progressFill"></div>
+                    <div class="music-progress-dot" id="progressDot"></div>
+                </div>
+                <span class="music-time" id="totalTime">0:00</span>
+            </div>
+            <div class="music-controls">
+                <button class="music-control-btn" id="playPauseBtn">
+                    <span class="play-icon">▶</span>
+                </button>
+                <div class="volume-control">
+                    <span class="volume-icon">🔊</span>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Message Modal -->
+    <div class="special-modal" id="specialModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-emoji" id="modalEmoji"></div>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-message" id="modalMessage"></p>
+        </div>
+    </div>
+
+    <!-- Lightbox for Images -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Full screen">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
